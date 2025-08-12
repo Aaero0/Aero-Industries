@@ -11,25 +11,71 @@ license="All rights reserved"
 
 [[mods]] 
 # The ID of your pack.
-modId="mtsofficialpack"
+modId="aeroindustriesdecor"
 # Version number.  Must start with a number or Forge complains.
-version="24"
+version="1"
  # Display name for the pack in the in-game mods list.
-displayName="Immersive Vehicles (MTS/IV) - Official Content Pack"
+displayName="Immersive Vehicles (MTS/IV) - Aero Industries Decor"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
-displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mts-aeroindustries"
 # Pack logo.
-logoFile="vingette.png"
+logoFile="logoDecor.png"
 # The description text for the pack (multi line!)
 description='''
-A small selection of content made by the core Immersive Vehicles (MTS) team.  This pack aims to show a little of all the things the mod can do, but not focus in any one area too heavily.  A good all-around starter pack.
-
-Credits go to Don Bruce, Limit, Wolfvanox, Cactus, Fsendventd, and last, but certianly not least, Mr Mulle.
+A wide variety of decorations for a modern style city.
 '''
 
-[[dependencies.mtsofficialpack]]
+[[mods]]
+# The ID of your pack.
+modId="aeroindustriesparts"
+# Version number.  Must start with a number or Forge complains.
+version="1"
+ # Display name for the pack in the in-game mods list.
+displayName="Immersive Vehicles (MTS/IV) - Aero Industries Parts"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mts-aeroindustries"
+# Pack logo.
+logoFile="logoParts.png"
+# The description text for the pack (multi line!)
+description='''
+A wide variety of parts from wheels to the other stuff
+'''
+
+[[mods]]
+# The ID of your pack.
+modId="aeroindustriesvehicles"
+# Version number.  Must start with a number or Forge complains.
+version="1"
+ # Display name for the pack in the in-game mods list.
+displayName="Immersive Vehicles (MTS/IV) - Aero Industries Vehicles"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mts-aeroindustries"
+# Pack logo.
+logoFile="logoVehicles.png"
+# The description text for the pack (multi line!)
+description='''
+Detailed real life vehicles, PLUS fictional vehicles under Aero Corporation brands.
+'''
+
+[[mods]]
+# The ID of your pack.
+modId="aerosaftermarket"
+# Version number.  Must start with a number or Forge complains.
+version="1"
+ # Display name for the pack in the in-game mods list.
+displayName="Immersive Vehicles (MTS/IV) - Aero's Aftermarket"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mts-aeroindustries"
+# Pack logo.
+logoFile="logoParts.png"
+# The description text for the pack (multi line!)
+description='''
+Aftermarket parts for other packs like KMW and UNU
+'''
+
+[[dependencies.aeroindustriesdecor]]
     modId="mts"
     mandatory=true
-    versionRange="[22.6.0,)"
+    versionRange="[22.16.0,)"
     ordering="NONE"
     side="BOTH"
