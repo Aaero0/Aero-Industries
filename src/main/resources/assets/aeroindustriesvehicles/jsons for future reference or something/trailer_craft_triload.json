@@ -1,0 +1,413 @@
+{
+  "motorized": {
+    "isTrailer": true,
+    "hasRunningLights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 500,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.5,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hookupVariables": [
+      "electric_power",
+      "engine_reversed_1",
+      "transmission_reversed",
+      "engines_on",
+      "right_turn_signal",
+      "left_turn_signal",
+      "running_light"
+    ]
+  },
+  "parts": [
+    {
+      "pos": [1.1435875,0.375,0.0],
+      "maxValue": 0.75,
+      "defaultPart": "aeroindustriesparts:wheel_trailer_car",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "axlelift",
+          "centerPoint": [0.0,0.46875,1.46875],
+          "axis": [-30.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 50
+        }
+      ]
+    },
+    {
+      "pos": [0.8623375,0.375,0.0],
+      "maxValue": 0.75,
+      "defaultPart": "aeroindustriesparts:wheel_trailer_car",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "axlelift",
+          "centerPoint": [0.0,0.46875,1.46875],
+          "axis": [-30.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 50
+        }
+      ]
+    },
+    {
+      "pos": [-1.1435875,0.375,0.0],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "defaultPart": "aeroindustriesparts:wheel_trailer_car",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "axlelift",
+          "centerPoint": [0.0,0.46875,1.46875],
+          "axis": [-30.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 50
+        }
+      ]
+    },
+    {
+      "pos": [-0.8623375,0.375,0.0],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "defaultPart": "aeroindustriesparts:wheel_trailer_car",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "axlelift",
+          "centerPoint": [0.0,0.46875,1.46875],
+          "axis": [-30.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 50
+        }
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "block",
+        "click",
+        "entity",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.8046875,0.875],
+          "width": 2.5,
+          "height": 0.046875
+        },
+        {
+          "pos": [0.0,0.8046875,3.375],
+          "width": 2.5,
+          "height": 0.046875
+        },
+        {
+          "pos": [0.0,0.8046875,-1.625],
+          "width": 2.5,
+          "height": 0.046875
+        },
+        {
+          "pos": [1.25,0.46875,1.46875],
+          "width": 0.5,
+          "height": 0.5,
+          "action": {
+            "action": "toggle",
+            "variable": "axlelift",
+            "value": 0.0
+          }
+        },
+        {
+          "pos": [0.0,0.28125,4.0],
+          "width": 0.75,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [0.0,0.578125,5.06875],
+          "width": 0.75,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 2.0
+          }
+        },
+        {
+          "pos": [0.0,0.828125,3.5625],
+          "width": 0.75,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 3.0
+          }
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "Truck 1",
+      "canInitiateConnections": true,
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel",
+          "pos": [0.0,0.28125,4.0],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "Truck 2",
+      "canInitiateConnections": true,
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel",
+          "pos": [0.0,0.46875,-2.25],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "Ring",
+      "canInitiateConnections": true,
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.578125,5.06875],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "Flatbed",
+      "canInitiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,0.828125,3.5625],
+          "mounted": true,
+          "distance": 5.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Craft Triload",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$suspensionarm",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "axlelift",
+            "centerPoint": [0.0,0.46875,1.46875],
+            "axis": [-30.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$hydraulic1",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "axlelift",
+            "centerPoint": [0.0,0.65625,0.21875],
+            "axis": [23.5,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 50
+          },
+          {
+            "animationType": "translation",
+            "variable": "axlelift",
+            "centerPoint": [0.0,0.65625,0.21875],
+            "axis": [0.0,0.0,0.3125],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 50
+          }
+        ]
+      },
+      {
+        "objectName": "$hydraulic2",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "axlelift",
+            "centerPoint": [0.0,0.65625,0.21875],
+            "axis": [23.5,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 50
+          },
+          {
+            "animationType": "translation",
+            "variable": "axlelift",
+            "centerPoint": [0.0,0.65625,0.21875],
+            "axis": [0.0,0.0,0.3125],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 50
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Craft Triload",
+    "description": "A unique flatbed trailer designed to haul 3 vehicles at the same time.\n \nNEEDS SECONDARY CONNECTION VEHICLE FOR THE REAR KINGPIN TO WORK.",
+    "stackSize": 1,
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingot_iron:0:8"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

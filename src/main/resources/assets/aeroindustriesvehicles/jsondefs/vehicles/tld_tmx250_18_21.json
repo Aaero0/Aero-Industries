@@ -1,0 +1,508 @@
+{
+  "motorized": {
+    "hasAutopilot": true,
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "running_light",
+    "panel": "mts:default_car"
+  },
+  "parts": [
+    {
+      "pos": [0.827403,0.225399,0.0],
+      "minValue": 1.0625,
+      "maxValue": 1.0625,
+      "toneIndex": 1,
+      "defaultPart": "aiavparts:wheel_tld",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.827403,0.225399,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "minValue": 1.0625,
+      "maxValue": 1.0625,
+      "toneIndex": 1,
+      "defaultPart": "aiavparts:wheel_tld",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.827403,0.225399,2.25],
+      "turnsWithSteer": true,
+      "minValue": 1.0625,
+      "maxValue": 1.0625,
+      "toneIndex": 1,
+      "defaultPart": "aiavparts:wheel_tld",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.827403,0.225399,2.25],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-0.827403,0.225399,2.25],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 1.0625,
+      "maxValue": 1.0625,
+      "toneIndex": 1,
+      "defaultPart": "aiavparts:wheel_tld",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-0.827403,0.225399,2.25],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.0,0.466998,3.19245],
+	  "isPermanent": true,
+      "isController": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "types": [
+        "seat_invisible"
+      ],
+      "interactableVariables": [
+        [
+          "door_r",
+          "door_l"
+        ]
+      ]
+    },
+    {
+      "pos": [0.45777,1.61527,3.3108],
+      "partScale": [0.75,0.75,0.75],
+      "types": [
+        "generic_gyrophare"
+      ],
+      "interactableVariables": [
+        [
+          "!part_present_8"
+        ]
+      ]
+    },
+    {
+      "pos": [-0.45777,1.61527,3.3108],
+      "partScale": [0.75,0.75,0.75],
+      "types": [
+        "generic_gyrophare"
+      ],
+      "interactableVariables": [
+        [
+          "!part_present_8"
+        ]
+      ]
+    },
+    {
+      "pos": [0.0,1.61527,3.3108],
+      "partScale": [0.75,0.75,0.75],
+      "types": [
+        "generic_lightbar",
+        "generic_gyrophare",
+        "generic_roofdevice"
+      ],
+      "interactableVariables": [
+        [
+          "!part_present_6"
+        ],
+        [
+          "!part_present_7"
+        ]
+      ]
+    },
+    {
+      "pos": [0.0,0.23125,0.25],
+      "maxValue": 4.25,
+	  "defaultPart": "iv_tpp:engine_i4_gasoline_normal_man",
+      "types": [
+        "engine_car"
+      ],
+      "interactableVariables": [
+        [
+          "door_hood"
+        ]
+      ],
+      "linkedParts": [1,2,3,4,6,7,8]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.289843,4.3798],
+          "width": 0.125,
+          "height": 0.125,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.289844,-0.870429],
+          "width": 0.125,
+          "height": 0.125,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "DoorL",
+      "collisions": [
+        {
+          "pos": [0.625,0.779688,3.02031],
+          "width": 0.125,
+          "height": 0.125,
+          "variableName": "door_l",
+          "variableType": "toggle"
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "DoorR",
+      "collisions": [
+        {
+          "pos": [-0.625,0.779688,3.02031],
+          "width": 0.125,
+          "height": 0.125,
+          "variableName": "door_r",
+          "variableType": "toggle"
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "applyAfter": "Hood",
+      "collisions": [
+        {
+          "pos": [0.0,1.04531,0.371875],
+          "width": 0.125,
+          "height": 0.125,
+          "variableName": "door_hood",
+          "variableType": "toggle"
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.4,-0.25],
+          "width": 1.05,
+          "height": 0.4
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.289844,4.3798],
+          "distance": 2.0
+        },
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.289844,-0.870429],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "TLD TMX-250-18 21 (white)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    }
+  ],
+  "initialVariables": [
+    "door_l",
+    "door_r",
+    "door_hood"
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "Steeringwheel",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,0.812115,3.75563],
+            "axis": [0.0,-1.50346,4.76861]
+          }
+        ]
+      },
+      {
+        "objectName": "DoorL",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_l",
+            "centerPoint": [0.625,0.5,3.9375],
+            "axis": [0.0,-80.0,0.0],
+            "duration": 30,
+            "forwardsEasing": "easeinoutcubic",
+            "reverseEasing": "easeincubic"
+          }
+        ]
+      },
+      {
+        "objectName": "DoorR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_r",
+            "centerPoint": [-0.625,0.5,3.9375],
+            "axis": [0.0,80.0,0.0],
+            "duration": 30,
+            "forwardsEasing": "easeinoutcubic",
+            "reverseEasing": "easeincubic"
+          }
+        ]
+      },
+      {
+        "objectName": "Hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_hood",
+            "centerPoint": [0.0,1.125,1.25],
+            "axis": [120.0,0.0,0.0],
+            "duration": 50,
+            "forwardsEasing": "easeinoutcubic",
+            "reverseEasing": "easeincubic"
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&runninglight",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Pushback tug \nRecomended parts: \n-TLD tractor wheels \n-UNU Diesel I6 \n-UNU Invisiseat/IVV Invisiseat \n-UNU orange gyrophare",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

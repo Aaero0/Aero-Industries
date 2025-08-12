@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Dodge Charger SRT Hellcat (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Dodge Charger SRT Hellcat (Finser State Police - Highway Patrol)",
+			"subName" : "_fhp",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "dodge_charger_ld_srthc"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"definitions" : [
+		{
+			"name" : "MAN F90 (Blue)",
+			"subName" : "_blue1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "MAN F90 (Cyan)",
+			"subName" : "_blue2",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "MAN F90 (Green)",
+			"subName" : "_green",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "MAN F90 (Black)",
+			"subName" : "_black",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "MAN F90 (Orange)",
+			"subName" : "_orange1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "MAN F90 (Yellow)",
+			"subName" : "_yellow",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "man_f90_1a"
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "generic": {
+    "type": "generic_mirror_tractor",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_default",
+      "name": "Optional mirrors",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+    },
+    {
+      "subName": "_jgsdf",
+      "name": "Optional mirrors (JGSDF)",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeGreen:1"]
+    }
+  ],
+  "general": {
+    "description": "accesory for toyota tg series",
+    "materials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+  }
+}

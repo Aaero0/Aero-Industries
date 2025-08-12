@@ -1,0 +1,32 @@
+{
+  "generic": {
+    "type": "generic_facelift",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "vehicle facelift kit",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "particles": [],
+    "modelType": "none"
+  },
+  "general": {
+    "name": "vehicle facelift kit",
+    "description": "Give that thing a glow up.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

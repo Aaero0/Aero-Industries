@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Dodge Dynasty Base (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+				{
+			"name" : "Dodge Dynasty Base (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+				{
+			"name" : "Dodge Dynasty Base (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "dodge_dynasty_v6"
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"definitions" : [
+		{
+			"name" : "Leyland Olympian (Finser Transit Authority, Old)",
+			"subName" : "_fta",
+			"description" : "1 of 18 Leyland Olympians operated by the FTA in this livery",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Finser Transit Authority)",
+			"subName" : "_fta1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Fresno Vehicle Rental)",
+			"subName" : "_fresno",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Red, White stripe)",
+			"subName" : "_redwhite",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Red)",
+			"subName" : "_red",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Green)",
+			"subName" : "_green",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Stagecoach Manchester)",
+			"subName" : "_stagecoach",
+			"secondaryTextColors":["FFAA0E"],
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (Kowloon Motor Bus)",
+			"subName" : "_kmb1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Leyland Olympian (China Motor Bus)",
+			"subName" : "_cmb",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "leyland_olympian_al134"
+	}
+}

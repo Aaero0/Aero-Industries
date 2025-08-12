@@ -1,0 +1,198 @@
+{
+  "generic": {
+    "type": "generic_lightbar",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.5,
+    "height": 0.5
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "lightbar_amber",
+      "name": "Follow Me lightbar (Style 1)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [
+      {
+        "objectName": "&textstop",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&lightsstop",
+        "emissive": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&textfollowme",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "Follow Me",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          },
+		  {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,-0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&rooflight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "Roof Lights",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&arrowleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "left_turn_signal",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&arrowright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "right_turn_signal",
+            "axis": [0.0,0.8,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1,
+            "forwardsEasing": "easeoutelastic"
+          }
+        ]
+      },
+      {
+        "objectName": "&gyro1",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "Warning Lights",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "2_2_0_cycle",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "&gyro2",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "Warning Lights",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "0_2_2_cycle",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "customVariables": [
+      "Follow Me",
+      "Stop",
+      "Roof Lights",
+	  "Warning Lights"
+    ],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:4"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

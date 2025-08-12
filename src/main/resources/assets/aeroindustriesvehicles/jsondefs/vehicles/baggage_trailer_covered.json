@@ -1,0 +1,233 @@
+{
+  "motorized": {
+    "isTrailer": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hookupVariables": [
+      "electric_power",
+      "engine_gear_1",
+      "engines_on",
+      "right_turn_signal",
+      "left_turn_signal",
+      "runninglight",
+      "headlight",
+      "emergencylight"
+    ]
+  },
+  "parts": [
+    {
+      "pos": [-0.581681,-0.048886,0.063896],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.625,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.581681,-0.048886,0.063896],
+      "maxValue": 0.625,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.581681,-0.048886,1.56369],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.625,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.581681,-0.048886,1.56369],
+      "maxValue": 0.625,
+      "types": [
+        "ground_wheel"
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.4,-0.25],
+          "width": 1.05,
+          "height": 0.4
+        },
+        {
+          "pos": [0.0,0.165625,2.2],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.165625,2.9375],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "canInitiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.165625,-0.464179],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_standard",
+      "name": "Baggage Trailer (covered)",
+      "extraMaterialLists": [
+        [
+          "oredict:dyeLightBlue:3"
+        ]
+      ]
+    }
+  ],
+  "initialVariables": [
+    "door_tailgate"
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$gas",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "throttle",
+            "centerPoint": [0.0,0.438564,1.99344],
+            "axis": [-20.0,0.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "none",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [0.0,-0.5,0.5]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "sounds": [
+      {
+        "name": "sillyahh:sillyahh",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "sillyahh",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "airport vibes",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

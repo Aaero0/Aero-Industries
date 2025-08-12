@@ -1,0 +1,156 @@
+{
+  "motorized": {
+    "isTrailer": true,
+    "hasRunningLights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 500,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.5,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hookupVariables": [
+      "electric_power",
+      "engine_reversed_1",
+      "transmission_reversed",
+      "engines_on",
+      "right_turn_signal",
+      "left_turn_signal",
+      "running_light"
+    ]
+  },
+  "parts": [
+    {
+      "pos": [1.1875,0.375,-0.40625],
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.921875,0.375,-0.40625],
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.1875,0.375,0.40625],
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.921875,0.375,0.40625],
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.1875,0.375,-0.40625],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.921875,0.375,-0.40625],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.1875,0.375,0.40625],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.921875,0.375,0.40625],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.75,
+      "types": [
+        "ground_wheel"
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "block",
+        "click",
+        "entity",
+        "attack"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.65625,2.03125],
+          "width": 2.4375,
+          "height": 0.625
+        },
+        {
+          "pos": [0.0,1.2265625,7.921875],
+          "width": 0.25,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel_gooseneck",
+          "pos": [0.0,1.4375,7.953125],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Gooseneck Trailer (Small)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Gooseneck Trailer (Small)",
+    "description": "A standard sized gooseneck trailer for all your everyday needs (vehicle needs a fifth wheel hitch in order ro use)",
+    "stackSize": 1,
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingot_iron:0:15"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

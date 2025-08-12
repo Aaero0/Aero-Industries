@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Honda Civic Type R FD2 (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "honda_civic_fd2r"
+	}
+}

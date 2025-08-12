@@ -1,0 +1,18 @@
+{
+  "generic": {
+    "type": "generic_weights_belaz",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_default",
+      "name": "Optional weights",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+    }
+  ],
+  "general": {
+    "description": "accesory for belaz 74271",
+    "materials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+  }
+}

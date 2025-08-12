@@ -1,0 +1,469 @@
+{
+  "motorized": {
+    "hasAutopilot": true,
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 1.5,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "isBigTruck": true
+  },
+  "parts": [
+    {
+      "pos": [1.1104,-0.058055 ,0.0],
+      "minValue": 1.0,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_gpt",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.1104,-0.058055 ,0.0],
+      "minValue": 1.0,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_gpt",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.1104,-0.058055 ,2.67472],
+      "turnsWithSteer": true,
+      "minValue": 1.0,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_gpt",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [1.1104,-0.058055 ,2.67472],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.1104,-0.058055 ,2.67472],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 1.0,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_gpt",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-1.1104,-0.058055 ,2.67472],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.6875, -0.0625, 4.5],
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_truck",
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.6875, -0.0625, 4.5],
+      "isController": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_truck",
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.0, 0.0, 0.0],
+	  "isPermanent": true,
+	  "defaultPart": "aiavparts:gyrosgpt_standard",
+      "types": [
+        "generic_gyro"
+      ]
+    },
+    {
+      "pos": [0, -0.1875, 1.875],
+      "maxValue": 4.25,
+	  "defaultPart": "unuparts:unuparts_part_unu_engine_i06_diesel",
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": [1,2,3,4]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.724222 ,0.094507,1.18157],
+          "width": 1.0,
+          "height": 1.3647
+        },
+        {
+          "pos": [-0.724222 ,0.094507,1.18157],
+          "width": 1.0,
+          "height": 1.3647
+        },
+        {
+          "pos": [-0.348419 ,0.390855 ,5.31022 ],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0, -0.25, 5.84375],
+          "distance": 2.0
+        },
+        {
+          "type": "pushback",
+          "pos": [0, -0.25, -0.8],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "MAC G-PT (Pelican)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_blue",
+      "name": "MAC G-PT (Pelican) Blue",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeBlue:1,oredict:dyeCyan:1"
+        ]
+      ]
+    },
+   {
+      "subName": "_yellow",
+      "name": "MAC G-PT (Pelican) Yellow",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeBlue:1,oredict:dyeCyan:1"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "steeringwhegfsgsgl",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [1.0,21.0,-12.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&runninglights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&runninglightsrear",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 0.2,
+        "hitboxSize": 0.2,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "scale": 0.5,
+        "hitboxSize": 0.2,
+        "color": "000000",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj",
+    "initialVariables": [
+      "door_tailgate"
+    ]
+  },
+  "general": {
+    "description": "The first ever pushback tug introduced to MTS and the inspiration of AIAV, The MAC GP-T. Made by §lmightymackrel aka the owner of MAI. \n \nRecommended parts: \n-GPT wheels \n-IAV Diesel I6 \n-UNU Truck seat/IVV Truck seat",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

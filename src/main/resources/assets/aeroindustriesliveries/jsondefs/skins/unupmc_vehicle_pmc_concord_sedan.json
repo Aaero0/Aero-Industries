@@ -1,0 +1,15 @@
+﻿{
+	"definitions" : [
+		{
+			"name" : "PMC Concord Sedan (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"partTones": ["", "_saddle"],
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "unupmc",
+    "systemName": "unupmc_vehicle_pmc_concord_sedan"
+	}
+}

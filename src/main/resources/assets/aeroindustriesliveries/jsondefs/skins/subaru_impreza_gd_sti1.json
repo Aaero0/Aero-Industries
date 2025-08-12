@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Subaru Impreza GD STI (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+				{
+			"name" : "Subaru Impreza GD STI (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+						{
+			"name" : "Subaru Impreza GD STI (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "subaru_impreza_gd_sti1"
+	}
+}

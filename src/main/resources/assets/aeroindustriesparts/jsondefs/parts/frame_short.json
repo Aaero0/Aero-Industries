@@ -1,0 +1,77 @@
+{
+  "generic": {
+    "type": "generic_frame_truck",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.25,
+    "height": 0.75
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.0,-2.53125],
+      "isPermanent":true,
+      "allowParentRemoval": true,
+      "defaultPart": "aeroindustriesparts:axle_dually_air",
+      "types": [
+        "generic_axle_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.125,-0.0625],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_truckbed_short"
+      ]
+    },
+    {
+      "pos": [0.0,-0.125,-3.59375],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_bumperrear_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-3.21875],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_mudflaps"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-3.75],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_taillights"
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "partTones": [
+        ""
+      ],
+      "textureName": "general_frame",
+      "name": "HGX RT350 Frame",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A short length multipurpose heavy duty frame.",
+    "materialLists": [
+      [
+        "oredict:ingotSteel:5"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

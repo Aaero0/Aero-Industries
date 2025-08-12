@@ -1,0 +1,449 @@
+{
+  "motorized": {
+    "hasAutopilot": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "headlight",
+    "panel": "mts:default_car",
+    "isBigTruck": true
+  },
+  "parts": [
+    {
+      "pos": [1.1817,0.416772,0.0],
+      "minValue": 1.5,
+      "maxValue": 1.6,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.1817,0.416772,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "minValue": 1.5,
+      "maxValue": 1.6,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.1817,0.416772,3.4],
+      "turnsWithSteer": true,
+      "minValue": 1.5,
+      "maxValue": 1.6,
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [1.1817,0.416772,3.4],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.1817,0.416772,3.4],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 1.5,
+      "maxValue": 1.6,
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-1.1817,0.416772,3.4],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.499435,0.460357,5.03267],
+      "isController": true,
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [-0.499435,0.460357,5.03267],
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [-0.499435,0.460357,-1.54564],
+      "rot": [0.0,180.0,0.0],
+      "isController": true,
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.499435,0.460357,-1.54564],
+      "rot": [0.0,180.0,0.0],
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.844846,1.61254,5.45519],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [0.0,1.61254,5.45519],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [-0.844846,1.61254,5.45519],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [0.844846,1.61254,-2.06232],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [0.0,1.61254,-2.06232],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [-0.844846,1.61254,-2.06232],
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [-0.45777,0.8,-2.31],
+      "types": [
+        "generic_mirror_rear"
+      ]
+    },
+    {
+      "pos": [0.0,1.54739,1.94],
+      "types": [
+        "generic_weights_belaz"
+      ]
+    },
+    {
+      "pos": [0.0,0.548147,1.08762],
+      "maxValue": 4.25,
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": [1,2,3,4,9,10,11,12,13,14,15,16]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.4,-0.25],
+          "width": 1.05,
+          "height": 0.4
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "canInitiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.539843,6.33918],
+          "distance": 2.0
+        },
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.539843,-2.90168],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "BelAZ-74271(white)",
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    }
+  ],
+  "initialVariables": [
+    "door_tailgate"
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "steeringwhegfsgsgl",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [1.0,21.0,-12.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "$reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$turnsignalleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "$turnsignalright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 0.2,
+        "hitboxSize": 0.2,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "scale": 0.5,
+        "hitboxSize": 0.2,
+        "color": "000000",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "russian pushback tug of some sort",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

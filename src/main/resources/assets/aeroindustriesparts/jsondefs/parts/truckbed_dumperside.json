@@ -1,0 +1,48 @@
+{
+  "generic": {
+    "type": "generic_truckbed",
+    "forwardsDamageMultiplier": 1.0,
+    "width": 1.5,
+    "height": 0.5
+  },
+  "collisionGroups": [],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Side dumper truck bed (White)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_red",
+      "name": "Side dumper truck bed (Red)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_yellow",
+      "name": "Side dumper truck bed (Yellow)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Side dumper truck bed",
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

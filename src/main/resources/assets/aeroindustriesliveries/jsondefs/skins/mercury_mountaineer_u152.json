@@ -1,0 +1,32 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercury Mountaineer U152 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercury Mountaineer U152 (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercury Mountaineer U152 (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercury Mountaineer U152 (Finser State Police - Highway Patrol)",
+			"subName" : "_fhp",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercury_mountaineer_u152"
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "generic": {
+    "type": "generic_aerodisc",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.5,
+    "height": 0.75
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Budd Wheel Aero Disc",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Budd Wheel Aero Disc",
+    "description": "Better fuel economy",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

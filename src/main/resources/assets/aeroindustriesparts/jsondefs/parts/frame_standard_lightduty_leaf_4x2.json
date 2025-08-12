@@ -1,0 +1,113 @@
+{
+  "generic": {
+    "type": "generic_frame_trucklightduty",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.75,
+    "height": 0.75
+  },
+  "parts": [
+    {
+      "pos": [1.0703125,-0.440625,-4.046875],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "partScale": [0.8,0.8,0.8],
+      "defaultPart": "aeroindustriesparts:wheel_budd_steel",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [0.8671875,-0.440625,-4.046875],
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "partScale": [0.8,0.8,0.8],
+      "defaultPart": "aeroindustriesparts:wheel_budd_steel",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [-1.0703125,-0.440625,-4.046875],
+      "rot": [0.0,0.0,0.0],
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "partScale": [0.8,0.8,0.8],
+      "defaultPart": "aeroindustriesparts:wheel_budd_steel",
+      "types": [
+        "ground_wheel_budd"
+      ],
+      "inverseMirroring": true
+    },
+    {
+      "pos": [-0.8671875,-0.440625,-4.046875],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "partScale": [0.8,0.8,0.8],
+      "defaultPart": "aeroindustriesparts:wheel_budd_steel",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-5.9375],
+      "types": [
+        "generic_truckbedlight"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-4.9375],
+      "types": [
+        "generic_accessorylight_mudflap"
+      ]
+    },
+    {
+      "pos": [0.0,0.0625,-2.3125],
+      "types": [
+        "generic_accessorylight_fender"
+      ]
+    },
+    {
+      "pos": [0.0,1.03125,-2.2203125],
+      "types": [
+        "generic_trucklightssmall"
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "partTones": [
+        ""
+      ],
+      "textureName": "frame_truck_air",
+      "name": "HGX RT04L250 Truck Frame",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A rigid 4x2 frame desinged for smaller trucks",
+    "materialLists": [
+      [
+        "oredict:ingotIron:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

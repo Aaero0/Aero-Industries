@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "type": "generic_furniture_double",
+    "forwardsDamageMultiplier": 1.0,
+    "forceAllLinks": true,
+    "width": 1.0,
+    "height": 0.5
+  },
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "block",
+        "attack",
+        "entity",
+        "click"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.53125,0.0],
+          "width": 0.25,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel_gooseneck",
+          "pos": [0.0,0.5625,0.0],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Aero Industries DutyHaul fifth wheel",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Aero Industries DutyHaul fifth wheel",
+    "description": "UNU Compatible",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

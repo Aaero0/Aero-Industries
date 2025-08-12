@@ -1,0 +1,173 @@
+{
+  "generic": {
+    "type": "generic_axle_drop_truck",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.0,
+    "height": 0.75
+  },
+  "parts": [
+    {
+      "pos": [1.328125,-0.40625,0.0],
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "groundDevicePosition":"rear_left",
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "Lift/Drop axle",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-0.09375,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 38
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "Lift/Drop axle",
+          "offset": 0.0,
+          "forwardsDelay":38,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "rotation",
+          "variable": "ground_rotation_1",
+          "centerPoint": [1.328125,-0.40625,0.0],
+          "axis": [-1.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ],
+      "activeAnimations": [
+        {
+          "animationType": "visibility",
+          "variable": "Lift/Drop axle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    },
+    {
+      "pos": [-1.328125,-0.40625,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "allowParentRemoval": true,
+      "groundDevicePosition":"rear_right",
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "Lift/Drop axle",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-0.09375,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0,
+          "duration": 38
+        },
+        {
+          "animationType": "inhibitor",
+          "variable": "Lift/Drop axle",
+          "offset": 0.0,
+          "forwardsDelay":38,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        },
+        {
+          "animationType": "rotation",
+          "variable": "ground_rotation_2",
+          "centerPoint": [-1.328125,-0.40625,0.0],
+          "axis": [1.0,0.0,0.0],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ],
+      "activeAnimations": [
+        {
+          "animationType": "visibility",
+          "variable": "Lift/Drop axle",
+          "offset": 0.0,
+          "clampMin": 1.0,
+          "clampMax": 1.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "general_frame",
+      "name": "Suplex D10X axle",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$drop_axle",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "Lift/Drop axle",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,-0.09375,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 38
+          }
+        ]
+      },
+      {
+        "objectName": "$airbags",
+        "animations": [
+          {
+            "animationType": "scaling",
+            "variable": "Lift/Drop axle",
+            "centerPoint": [-0.5625,-0.1875,0.0],
+            "axis": [0.0,0.5,0.0],
+            "offset": 1.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 38
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "customVariables": [
+      "Lift/Drop axle"
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A dead drop axle",
+    "materialLists": [
+      [
+        "oredict:ingotSteel:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

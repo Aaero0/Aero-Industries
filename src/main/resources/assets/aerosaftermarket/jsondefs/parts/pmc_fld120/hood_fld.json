@@ -1,0 +1,203 @@
+{
+  "generic": {
+    "type": "generic_bodypart_unu_hood_freightmaster",
+    "mustBeRemovedByScrewdriver": true,
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_white",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - White",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_black",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Black",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_blue",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Blue",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_green",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Green",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_grey",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Grey",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_orange",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Orange",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_red",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Red",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_yellow",
+
+      "name": "PMC Freightmaster FLD Kit - Hood - Yellow",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "constantValues": {
+    "part_closed": 1.0,
+    "unuisbest": 1.0,
+    "part_useDefaultSounds": 1.0,
+    "part_useDefaultHitboxes": 1.0,
+    "part_useDefaultAnimations": 1.0
+  },
+  "variableModifiers": [],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$hood",
+        "animations": []
+      },
+      {
+        "objectName": "&headlights",
+        "applyAfter": "$hood",
+        "animations": []
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&headlights",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 10,
+            "skipForwardsMovement": true
+          }
+        ],
+        "blendableComponents": []
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF8000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.5,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "left_turn_signal",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "0_10_8_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ],
+        "blendableComponents": []
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF8000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.5,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "right_turn_signal",
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "0_10_8_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ],
+        "blendableComponents": []
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "PMC Freightmaster FLD Kit - Hood",
+    "description": "Aero's Aftermarket - Standard FLD hood",
+    "stackSize": 1,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

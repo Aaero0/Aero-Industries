@@ -1,0 +1,57 @@
+﻿{
+  "generic": {
+    "type": "generic_bodypart_unu_truckcab",
+    "customType": "pmc_freightmaster",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 2.0,
+    "height": 0.25
+  },
+  "parts": [],
+  "collisionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "PMC Freightmaster - daycab cables",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "constantValues": {
+    "unuisbest": 1.0,
+    "part_cabwallDelete": 0.0
+  },
+  "variableModifiers": [
+    {
+      "variable": "part_cabLength",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "unuisbest",
+          "axis": [0.0,0.0,1.5],
+          "offset": 0.0,
+          "clampMin": 0.0,
+          "clampMax": 0.0
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Aero's Aftermarket - Daycab trailer cables for the PMC, replaces sleeper",
+    "stackSize": 1,
+    "materialLists": [
+      [
+        "mts:unuparts.unuparts_crafting_unu_sheetmetal_panel_steel:0:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

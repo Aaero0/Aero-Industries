@@ -1,0 +1,239 @@
+{
+  "generic": {
+    "type": "generic_truckbed_short",
+    "forwardsDamageMultiplier": 1.0,
+    "width": 1.5,
+    "height": 0.5
+  },
+  "definitions": [
+    {
+      "subName":"",
+      "textureName": "truckbed_dumper",
+      "name": "Short Dumper Truckbed (White)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_red",
+      "textureName": "truckbed_dumper_red",
+      "name": "Short Dumper Truckbed (Red)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_yellow",
+      "textureName": "truckbed_dumper_yellow",
+      "name": "Short Dumper Truckbed (Yellow)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_orange",
+      "textureName": "truckbed_dumper_orange",
+      "name": "Short Dumper Truckbed (Orange)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_blue",
+      "textureName": "truckbed_dumper_blue",
+      "name": "Short Dumper Truckbed (Blue)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_beige",
+      "textureName": "truckbed_dumper_beige",
+      "name": "Short Dumper Truckbed (Beige)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_brown",
+      "textureName": "truckbed_dumper_brown",
+      "name": "Short Dumper Truckbed (Brown)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_green",
+      "textureName": "truckbed_dumper_green",
+      "name": "Short Dumper Truckbed (Green)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_lime",
+      "textureName": "truckbed_dumper_lime",
+      "name": "Short Dumper Truckbed (Lime)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_gray",
+      "textureName": "truckbed_dumper_gray",
+      "name": "Short Dumper Truckbed (Gray)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_lightgray",
+      "textureName": "truckbed_dumper_lightgray",
+      "name": "Short Dumper Truckbed (Light Gray)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName":"_black",
+      "textureName": "truckbed_dumper_black",
+      "name": "Short Dumper Truckbed (Black)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [
+      {
+        "objectName": "&runninglight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_running_1",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "parent_engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "brake",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "running_light",
+            "axis": [0.0,0.5,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF0000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2,
+            "skipForwardsMovement": true
+          }
+        ]
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Short Dumper Truckbed",
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

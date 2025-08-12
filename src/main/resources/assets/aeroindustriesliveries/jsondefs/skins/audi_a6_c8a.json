@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Audi A6 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "audi_a6_c8a_ftataxi"
+	}
+}

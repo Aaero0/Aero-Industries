@@ -1,0 +1,44 @@
+{
+	"definitions" : [
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Blue)",
+			"subName" : "_blue1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Cyan)",
+			"subName" : "_cyan",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Green)",
+			"subName" : "_green",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Maroon)",
+			"subName" : "_maroon",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Orange)",
+			"subName" : "_orange",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 Daycab Long chassis (Yellow)",
+			"subName" : "_yellow",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "peterbilt_379_dcl"
+	}
+}

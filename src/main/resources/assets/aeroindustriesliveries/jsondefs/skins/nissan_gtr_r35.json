@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan GT-R R35 (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_gtr_r35"
+	}
+}

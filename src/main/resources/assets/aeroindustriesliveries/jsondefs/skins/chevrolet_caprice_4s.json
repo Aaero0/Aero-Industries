@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Chevrolet Caprice 4S (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Chevrolet Caprice 4S (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "chevrolet_caprice_4s"
+	}
+}

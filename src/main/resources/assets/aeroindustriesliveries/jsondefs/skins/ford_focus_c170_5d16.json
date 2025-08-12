@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Ford Focus MK1 1.6 (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Ford Focus MK1 1.6 (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Ford Focus MK1 1.6 (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "ford_focus_c170_5d16"
+	}
+}

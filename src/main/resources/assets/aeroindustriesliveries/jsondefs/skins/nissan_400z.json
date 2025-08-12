@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan 400Z (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_400z"
+	}
+}

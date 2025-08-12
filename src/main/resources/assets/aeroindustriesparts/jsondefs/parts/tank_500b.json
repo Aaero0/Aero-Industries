@@ -1,0 +1,37 @@
+{
+  "generic": {
+    "type": "generic_tank_500",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.0,
+    "height": 0.25
+  },
+  "interactable": {
+    "interactionType": "barrel",
+    "inventoryUnits": 50.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "500 bucket tank",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "particles": [],
+    "modelType": "none"
+  },
+  "general": {
+    "hideOnCreativeTab": true,
+    "name": "500 bucket tank",
+    "description": "holds 500 buckets of shit",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

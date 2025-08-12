@@ -1,0 +1,56 @@
+{
+  "generic": {
+    "type": "generic_bumperrear_truck",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "parts": [
+   {
+      "pos":[0.0,-0.3125,-0.046875],
+      "types":[
+        "generic_rearbumper_addition"
+      ],
+      "allowParentRemoval":true
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "canInitiateConnections":true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,-0.2625,-0.18125],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "general_frame",
+      "name": "Rear Truck Bumper - V-shape + Pintle hitch and D-rings",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "An aftermarket bumper that sits under the frame.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

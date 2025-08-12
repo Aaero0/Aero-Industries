@@ -1,0 +1,136 @@
+{
+  "generic": {
+    "type": "generic_frame_truck",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.25,
+    "height": 0.75
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.0,-3.78125],
+      "allowParentRemoval": true,
+      "defaultPart": "aeroindustriesparts:axle_dually_air",
+      "types": [
+        "generic_axle_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-5.03125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_axle_truck_rear"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-2.53125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_axle_truck_front",
+        "generic_axle_drop_truck",
+        "generic_axle_drop_small_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-1.28125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_axle_drop_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-1.53125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_axle_drop_small_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-0.53125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_axle_drop_small_truck"
+      ]
+    },
+    {
+      "pos": [0.0,-0.125,-5.96875],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_bumperrear_truck"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-5.71875],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_mudflaps"
+      ]
+    },
+    {
+      "pos": [0.0,0.0,-6.125],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_taillights"
+      ]
+    },
+    {
+      "pos": [0.0,0.125,-0.0625],
+      "allowParentRemoval": true,
+      "types": [
+        "generic_truckbed"
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "partTones": [
+        ""
+      ],
+      "textureName": "general_frame",
+      "name": "HGX RT650 Frame",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$secondary_shaft",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "!part_present_1"
+          },
+          {
+            "animationType": "visibility",
+            "variable": "part_present_3"
+          }
+        ]
+      },
+      {
+        "objectName": "$secondary_shaft_3axle",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "!part_present_3"
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A standard length multipurpose heavy duty frame.",
+    "materialLists": [
+      [
+        "oredict:ingotSteel:10"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

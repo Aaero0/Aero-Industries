@@ -1,0 +1,118 @@
+{
+  "generic": {
+    "type": "generic_bodypart_unu_runningboard_freightmaster",
+    "mustBeRemovedByScrewdriver": true,
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_white",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - White",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_black",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Black",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_blue",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Blue",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_green",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Green",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_grey",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Grey",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_orange",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Orange",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_red",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Red",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_yellow",
+
+      "name": "PMC Freightmaster FLD Kit - Short running boards - Yellow",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "constantValues": {
+    "unuisbest": 1.0,
+    "part_useDefaultHitboxes": 1.0
+  },
+  "rendering": {
+	"animatedObjects": [
+      {
+        "objectName": "$RunningBoardLeft",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_ismirrored"
+          }
+        ]
+      },
+      {
+        "objectName": "$RunningBoardRight",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "part_ismirrored",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "stackSize": 1,
+    "materialLists": [
+      [
+        "mts:unuparts.unuparts_crafting_unu_sheetmetal_panel_steel:0:1"
+      ],
+      [
+        "mts:unuparts.unuparts_crafting_unu_sheetmetal_panel_steel:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "generic": {
+    "type": "generic_roofdevice",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.5,
+    "height": 0.5
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Long Taxi Roof Ad (Template)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_wolfpack",
+      "name": "Long Taxi Roof Ad (Yaju Senpai drama)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_multitask",
+      "name": "Long Taxi Roof Ad (Peak multitasking)",
+      "extraMaterialLists": [
+        []
+      ]
+    },
+    {
+      "subName": "_vashkmat",
+      "name": "Long Taxi Roof Ad (Vashkmat)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "initialVariables": [
+    "taxi"
+  ],
+  "rendering": {
+    "lightObjects": [
+      {
+        "objectName": "&light",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FF9A00",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&taxi",
+        "isElectric": true,
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "taxi",
+            "axis": [0.0,1.5,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      }
+    ],
+    "customVariables": [
+      "taxi"
+    ],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "ah yes, mobile advertising",
+    "materialLists": [
+      [
+        "minecraft:glass:0:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

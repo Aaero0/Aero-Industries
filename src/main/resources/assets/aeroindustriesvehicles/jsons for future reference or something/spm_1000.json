@@ -1,0 +1,516 @@
+{
+  "motorized": {
+    "isTrailer": true,
+    "hasRunningLights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 200,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.5,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "hookupVariables": [
+      "electric_power",
+      "engine_reversed_1",
+      "transmission_reversed",
+      "engines_on",
+      "right_turn_signal",
+      "left_turn_signal",
+      "running_light"
+    ]
+  },
+  "parts": [
+    {
+      "pos": [1.3125,0.5625,1.375],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.3125,0.5625,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.3125,0.5625,-1.375],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.484375,0.5625,1.375],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.484375,0.5625,-0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.484375,0.5625,-1.375],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.3125,0.5625,1.375],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.3125,0.5625,0.0],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.3125,0.5625,-1.375],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.484375,0.5625,1.375],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.484375,0.5625,-0.0],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.484375,0.5625,-1.375],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 2.0,
+      "defaultPart": "aeroindustriesparts:wheel_spm_tank",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.109375,1.109375,-5.21875],
+      "rot": [0.0,180.0,0.0],
+      "types": [
+        "generic_licenseplate",
+        "generic_licenseplate_us",
+        "generic_licenseplate_euro"
+      ]
+    },
+    {
+      "pos": [0.0,3.65625,1.15625],
+      "isPermanent": true,
+      "defaultPart": "aeroindustriesparts:tank_500b",
+      "types": [
+        "generic_tank500"
+      ]
+    },
+    {
+      "pos": [0.0,3.65625,4.65625],
+      "isPermanent": true,
+      "defaultPart": "aeroindustriesparts:tank_500b",
+      "types": [
+        "generic_tank500"
+      ]
+    },
+    {
+      "pos": [0.0,3.65625,8.15625],
+      "isPermanent": true,
+      "defaultPart": "aeroindustriesparts:tank_500b",
+      "types": [
+        "generic_tank500"
+      ]
+    },
+    {
+      "pos": [-1.375,0.875,-5.28125],
+      "defaultPart": "aeroindustriesparts:fireextinguisher",
+      "types": [
+        "generic_fireextinguisher"
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "entity",
+        "click",
+        "attack",
+        "block"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.65625,2.03125],
+          "width": 2.4375,
+          "height": 0.625
+        },
+        {
+          "pos": [0.0,1.25,9.53125],
+          "width": 0.25,
+          "height": 0.25,
+          "action": {
+            "action": "set",
+            "variable": "connection_requested",
+            "value": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "collisionTypes": [
+        "entity",
+        "click",
+        "attack",
+        "block"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.934375,1.4375,6.8125],
+          "width": 0.25,
+          "height": 0.25,
+          "action": {
+            "action": "toggle",
+            "variable": "Legs",
+            "value": 1.0
+          }
+        },
+        {
+          "pos": [0.934375,1.4375,6.8125],
+          "width": 0.25,
+          "height": 0.25,
+          "action": {
+            "action": "toggle",
+            "variable": "Legs",
+            "value": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "TRAILER",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "trailer_fifthwheel",
+          "pos": [0.0,1.25,9.53125],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "name": "SPM-1000",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "$legs",
+        "animations": [
+          {
+            "animationType": "translation",
+            "variable": "Legs",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [0.0,0.4375,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 25
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&translucent_reverselight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&translucent_brakelight",
+        "emissive": true,
+        "isElectric": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&translucent_turnsignalleft",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&translucent_turnsignalright",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&gyro",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "EMERLTS",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "0_2_2_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&gyro2",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FFAA00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "EMERLTS",
+            "offset": 0.0,
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "2_2_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "offset": 0.0,
+            "clampMin": 0.0,
+            "clampMax": 0.0,
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "customVariables": [
+      "Legs",
+      "EMERLTS"
+    ],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "SPM-1000",
+    "description": "A superheavy fuel tank intended for use at airports. It was later imported for use outisde of Russia and were retired in 2010 after more practically sized trailers were available.",
+    "stackSize": 1,
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingot_iron:0:32"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

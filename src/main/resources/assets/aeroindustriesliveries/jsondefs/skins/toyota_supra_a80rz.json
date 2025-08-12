@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Supra A80 RZ (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Toyota Supra A80 RZ (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_supra_a80rz"
+	}
+}

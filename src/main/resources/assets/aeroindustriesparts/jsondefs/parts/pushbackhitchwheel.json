@@ -1,0 +1,49 @@
+{
+"ground" : {
+"isWheel": true,
+"flatHeight": 0.1,
+"height" : 0.1,
+"width" : 0.125,
+"motiveFriction" : 1.0,
+"lateralFriction" : 1.0
+},
+  "generic": {
+    "type": "ground_wheel",
+    "width": 0.125,
+    "height": 0.01
+  },
+  "parts": [
+    {
+      "pos": [-0.379986,-0.024515,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "maxValue": 0.3125,
+      "types": [
+        "ground_wheel",
+        "ground_wheel_aircraft"
+      ]
+    }
+  ],
+   "connectionGroups": [
+  {
+    "groupName": "Hitch",
+    "canInitiateConnections": true,
+    "isHitch": true,
+    "connections": [
+      {
+        "type": "pushback",
+        "pos": [0.0,0.0,0.0],
+        "distance": 5.0
+      }
+    ]
+  }
+],
+  "rendering":{
+    "modelType":"none"
+  },
+  "general": {
+	"name": "Invisible pushback wheel",
+    "description": "Truck accessory - looks vary depending on the truck applied to",
+    "materials": ["oredict:ingotIron:1"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "generic": {
+    "type": "generic_handle_tractor",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_default",
+      "name": "Optional handle bar",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+    },
+	{
+      "subName": "_jgsdf",
+      "name": "Optional handle bar (JGSDF)",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeGreen:1"]
+    }
+  ],
+  "general": {
+    "description": "accessory for toyota tg series",
+    "materials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+  }
+}

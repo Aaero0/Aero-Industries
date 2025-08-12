@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan Skyline C10 2000GT-R (Finser State Police - GEN 1)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Nissan Skyline C10 2000GT-R (Finser State Police - GEN 2)",
+			"subName" : "_fspd1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Nissan Skyline C10 2000GT-R (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_skyline_c10_2000gt-r"
+	}
+}

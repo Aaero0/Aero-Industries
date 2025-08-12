@@ -1,0 +1,35 @@
+{
+  "generic": {
+    "type": "generic_fireextinguisher",
+    "canBeRemovedByHand": true,
+    "forwardsDamageMultiplier": 0.0,
+    "canBePlacedOnGround": true,
+    "width": 1.0,
+    "height": 0.8
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Fire Extinguisher",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Fire Extinguisher",
+    "description": "no it doesnt put out fires unfortunately. For decoration only",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "generic": {
+    "type": "generic_hitch_tractor",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "collision": [
+	{
+		"pos": [0.0,0.0 ,0.0],
+		"width": 0.25,
+		"height": 0.25,
+		"variableName": "connection_requested",
+		"variableType": "set",
+		"variableValue": 2
+	}
+  },
+  "connections": [
+	{
+      "type": "trailer_standard",
+      "pos": [0.0, 0.055469, 0.120429],
+      "distance": 2
+	},
+	{
+      "type": "trailer_standard",
+      "pos": [0.0, 0.180469 , 0.120429],
+      "distance": 2
+	}
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "Optional front hitch",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+    },
+    {
+      "subName": "_yellow",
+      "name": "Optional front hitch (yellow)",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+	},
+    {
+      "subName": "_red",
+      "name": "Optional front hitch (red)",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+    },
+    {
+      "subName": "_jgsdf",
+      "name": "Optional front hitch (JGSDF)",
+      "extraMaterials": ["oredict:ingotIron:1","oredict:dyeGreen:1"]
+    }
+  ],
+  "general": {
+    "description": "accesory for toyota tg series",
+    "materials": ["oredict:ingotIron:1","oredict:dyeWhite:1"]
+  }
+}

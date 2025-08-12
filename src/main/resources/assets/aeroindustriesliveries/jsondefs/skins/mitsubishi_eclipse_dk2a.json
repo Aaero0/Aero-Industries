@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mitsubishi Eclipse DK2A (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mitsubishi Eclipse DK2A (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mitsubishi_eclipse_dk2a"
+	}
+}

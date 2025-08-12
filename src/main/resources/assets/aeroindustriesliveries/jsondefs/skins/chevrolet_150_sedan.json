@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Chevrolet One Fifty (Finser Cab Co.)",
+			"subName" : "_taxi1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Chevrolet One Fifty (Finser Cab Co. Black)",
+			"subName" : "_taxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Chevrolet One Fifty (Finser State Police - GEN 1)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "chevrolet_150_sedan"
+	}
+}

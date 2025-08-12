@@ -1,0 +1,35 @@
+{
+  "generic": {
+    "type": "generic_fender_truck",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "connectionGroups": [
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "general_frame",
+      "name": "Truck fenders - Plastic half front fenders",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "To be put on the front axle only.",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

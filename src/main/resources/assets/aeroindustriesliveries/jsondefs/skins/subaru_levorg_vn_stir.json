@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Subaru Levorg VN STI Sport R (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Subaru Levorg VN STI Sport R (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "subaru_levorg_vn_stir"
+	}
+}

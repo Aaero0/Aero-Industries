@@ -1,0 +1,26 @@
+{
+	"definitions" : [
+		{
+			"name" : "Ford Mustang GT (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+				{
+			"name" : "Ford Mustang GT (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Forc Mustang GT (Finser State Police - Highway Patrol)",
+			"subName" : "_fhp",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "ford_mustang_s197_gt"
+	}
+}

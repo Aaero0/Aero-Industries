@@ -1,0 +1,644 @@
+{
+  "motorized": {
+    "hasAutopilot": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "headlight",
+    "panel": "mts:default_car"
+  },
+  "parts": [
+    {
+      "pos": [0.703988,0.126599,-0.056129],
+      "minValue": 0.6874,
+      "maxValue": 0.6875,
+	  "defaultPart": "aiavparts:tractor_wheel_rear",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.703988,0.126599,-0.056129],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "minValue": 0.6874,
+      "maxValue": 0.6875,
+	  "defaultPart": "aiavparts:tractor_wheel_rear",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.703988,0.065119,1.76226],
+      "turnsWithSteer": true,
+      "minValue": 0.561,
+      "maxValue": 0.562,
+	  "defaultPart": "aiavparts:tractor_wheel_front",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.703988,0.065119,1.76226],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-0.703988,0.065119,1.76226],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 0.561,
+      "maxValue": 0.562,
+	  "defaultPart": "aiavparts:tractor_wheel_front",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-0.703988,0.065119,1.76226],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.315155,0.603334,0.113566],
+      "isController": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.783833,0.671258,1.32676],
+      "types": [
+        "generic_mirror_tractor"
+      ]
+    },
+    {
+      "pos": [-0.783833,0.718714,1.32676],
+      "types": [
+        "generic_mirror_tractor"
+      ]
+    },
+    {
+      "pos": [0.751542,0.718714,0.349848],
+      "types": [
+        "generic_handle_tractor"
+      ]
+    },
+    {
+      "pos": [-0.751542,0.718714,0.349848],
+      "types": [
+        "generic_handle_tractor"
+      ]
+    },
+    {
+      "pos": [0.0,0.109569,2.52139],
+      "types": [
+        "generic_hitch_tractor"
+      ]
+    },
+    {
+      "pos": [0.0,0.054991,1.13035],
+      "maxValue": 1.25,
+	  "defaultPart": "iv_tpp:engine_i3_gasoline_normal_aut",
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": [1,2,3,4,6,7,8,9,10]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.0,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [1.0,0.5,1.0],
+          "variableName": "door_l",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_l",
+          "axis": [0.8,0.0,0.4516]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [1.0,0.5,1.4],
+          "variableName": "door_l",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_l",
+          "axis": [0.3999999999999999,0.0,0.24570000000000003]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [1.0,0.5,1.8],
+          "variableName": "door_l",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_l",
+          "axis": [0.0,0.0,0.0]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-1.0,0.5,1.0],
+          "variableName": "door_r",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_r",
+          "axis": [-0.8,0.0,0.4516]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-1.0,0.5,1.4],
+          "variableName": "door_r",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_r",
+          "axis": [-0.3999999999999999,0.0,0.24570000000000003]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-1.0,0.5,1.8],
+          "variableName": "door_r",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_r",
+          "axis": [0.0,0.0,0.0]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.5,0.75,3.0],
+          "variableName": "door_hood",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_hood",
+          "axis": [0.0,0.95,-0.3999999999999999]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.5,0.75,2.4],
+          "variableName": "door_hood",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_hood",
+          "axis": [0.0,0.5,-0.3999999999999999]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-0.5,0.75,3.0],
+          "variableName": "door_hood",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_hood",
+          "axis": [0.0,0.95,-0.3999999999999999]
+        }
+      ]
+    },
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [-0.5,0.75,2.4],
+          "variableName": "door_hood",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_hood",
+          "axis": [0.0,0.5,-0.3999999999999999]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.4,-0.25],
+          "width": 1.05,
+          "height": 0.4
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "canInitiateConnections": true,
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.164844,-0.689062],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "Toyota TG series tractor",
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_jgsdf",
+      "name": "Toyota TG series tractor (JGSDF)",
+      "extraMaterialLists": [
+        [
+          "oredict:dyeGreen:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_ana",
+      "name": "Toyota TG series tractor (ANA)",
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeBlue:1,oredict:dyeCyan:1"
+        ]
+      ]
+    }
+  ],
+  "initialVariables": [
+    "door_tailgate",
+    "door_tailgate",
+    "door_tailgate",
+    "door_l",
+    "door_l",
+    "door_l",
+    "door_r",
+    "door_r",
+    "door_r",
+    "door_hood",
+    "door_hood",
+    "door_hood",
+    "door_hood"
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "steeringwhegfsgsgl",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [1.0,21.0,-12.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "$reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "$turnsignalleftrear",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "$turnsignalrightrear",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 0.2,
+        "hitboxSize": 0.2,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "scale": 0.5,
+        "hitboxSize": 0.2,
+        "color": "000000",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "replacement for the fmc zfa10 or smth",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

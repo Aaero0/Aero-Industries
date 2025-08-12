@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan Skyline ER34 GT-T (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Nissan Skyline ER34 GT-T (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_skyline_er34_gtt"
+	}
+}

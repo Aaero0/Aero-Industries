@@ -1,0 +1,49 @@
+{
+  "generic": {
+    "type": "generic_gyro",
+    "width": 0.25,
+    "height": 0.25
+  },
+  "definitions": [
+    {
+      "subName": "_standard",
+      "name": "gyronamegpt",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [
+      {
+        "objectName": "&gyro",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "EMERLTS",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "0_5_5_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "customVariables": ["EMERLTS"],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "materialLists": [
+      ["minecraft:grass:0:1"]
+    ],
+    "stackSize": 1
+  }
+}

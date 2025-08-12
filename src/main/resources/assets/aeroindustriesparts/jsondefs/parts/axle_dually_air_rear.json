@@ -1,0 +1,96 @@
+{
+  "generic": {
+    "type": "generic_axle_truck_rear",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.75,
+    "height": 0.75
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.0,0.0],
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 0.0,
+      "maxValue": 1.0,
+      "types": [
+        "generic_fender_truck_rear"
+      ]
+    },
+    {
+      "pos": [1.0,-0.5,0.0],
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [1.25,-0.5,0.0],
+      "rot": [0.0,-180.0,0.0],
+      "isMirrored": true,
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [-1.0,-0.5,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    },
+    {
+      "pos": [-1.25,-0.5,0.0],
+      "rot": [0.0,0.0,0.0],
+      "isMirrored": false,
+      "allowParentRemoval": true,
+      "toneIndex": 1,
+      "minValue": 1.0,
+      "maxValue": 1.875,
+      "defaultPart": "aeroindustriesparts:wheel_budd_us_aluminum",
+      "types": [
+        "ground_wheel_budd"
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "general_frame",
+      "name": "Suplex AB270-R secondary axle",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "A live axle fitted with air suspension. - Goes behind primary axle",
+    "materialLists": [
+      [
+        "oredict:ingotSteel:2"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

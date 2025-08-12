@@ -1,0 +1,33 @@
+{
+  "generic": {
+    "type": "generic_hubcap_steel",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.5,
+    "height": 1.0
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "Steel budd wheel rear hubcap (Spike)",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "Steel budd wheel rear hubcap (Spike)",
+    "description": "make budds look better",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

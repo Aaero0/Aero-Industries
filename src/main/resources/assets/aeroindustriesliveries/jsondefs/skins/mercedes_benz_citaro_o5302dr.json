@@ -1,0 +1,36 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (Arriva Max)",
+			"subName" : "_arriva",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (Go Ahead London)",
+			"subName" : "_goahead",
+			"secondaryTextColors":["FFFF7A","000000"],
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (Go Ahead London, full red)",
+			"subName" : "_goahead2",
+			"secondaryTextColors":["FFFF7A","000000"],
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mercedes Benz Citaro 2-door RHD (TFL Metro Bus)",
+			"subName" : "_metrobus",
+			"secondaryTextColors":["FFFF7A","000000"],
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercedes_benz_citaro_o5302dr"
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "generic": {
+    "type": "generic_rim_heavyduty",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.001,
+    "height": 0.001
+  },
+  "definitions": [
+    {
+      "subName": "",
+      "name": "s",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "name": "s",
+    "description": "s",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

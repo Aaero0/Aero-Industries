@@ -1,0 +1,28 @@
+{
+    "general": {
+        "name" : "Budd wheel",
+        "type" : "ground_wheel_budd",
+		"materials" : ["oredict:dyeBlack:1", "oredict:ingotIron:4", "minecraft:dyeWhite:2"]
+    },
+	"ground" : {
+    "isWheel": true,
+    "flatHeight": 0.4375,
+    "height" : 1.0,
+		"width" : 0.4,
+		"motiveFriction" : 1.0,
+		"lateralFriction" : 1.0
+	},
+	"rendering" : {
+		"animatedObjects" : [
+      {
+        "objectName": "$tire",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "ground_isflat"
+          }
+        ]
+      }
+    ]
+	}
+}

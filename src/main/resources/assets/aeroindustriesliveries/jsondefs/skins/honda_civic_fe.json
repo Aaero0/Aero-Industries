@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Honda Civic FE (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "honda_civic_fe"
+	}
+}

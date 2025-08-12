@@ -1,0 +1,44 @@
+{
+	"definitions" : [
+		{
+			"name" : "Peterbilt 379 (Blue)",
+			"subName" : "_blue1",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 (Cyan)",
+			"subName" : "_cyan",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 (Green)",
+			"subName" : "_green",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 (Maroon)",
+			"subName" : "_maroon",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 (Orange)",
+			"subName" : "_orange",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Peterbilt 379 (Yellow)",
+			"subName" : "_yellow",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "peterbilt_379"
+	}
+}

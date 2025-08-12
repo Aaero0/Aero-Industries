@@ -1,0 +1,151 @@
+{
+    "general": {
+		"description":"Now you can unload your trucks right.",
+		"stackSize": 64,
+		"materials" : ["minecraft:iron_block:1", "minecraft:wool:15:3", "minecraft:redstone:1"]
+	},
+    "generic": {
+		"type": "generic_dockdecorpart",
+		"width": 0.5,
+		"height": 0.0125,
+        "canBeRemovedByHand": true,
+		"canBePlacedOnGround": true
+	},
+	"definitions":[
+		{
+		   "subName":"",
+		   "name":"Loading Dock",
+		   "partTones":[
+			  ""
+		   ],
+		   "extraMaterialLists":[
+			  [
+				 "oredict:dyeWhite:3"
+			  ]
+		   ]
+		},
+		{
+		   "subName":"_line",
+		   "name":"Loading Dock (With Yellow Line)",
+		   "partTones":[
+			  ""
+		   ],
+		   "extraMaterialLists":[
+			  [
+				 "oredict:dyeRed:1"
+			  ]
+		   ]
+		}
+	 ],  
+	"rendering":{
+		"animatedObjects":[
+		   {
+			  "objectName":"doorthing",
+			  "animations":[
+				 {
+					"animationType":"rotation",
+					"variable":"rudder",
+					"centerPoint":[
+					   0.588149,
+					   0.593752,
+					   1.82917
+					],
+					"axis":[
+					   1.0,
+					   21.0,
+					   -12.0
+					]
+				 }
+			  ]
+		   }
+		],
+		"textObjects":[
+			{
+			   "pos":[
+				  0.0,
+				  4.1875,
+				  -0.5078125
+			   ],
+			   "rot":[
+				  0.0,
+				  0.0,
+				  0.0
+			   ],
+			   "scale":0.4375,
+			   "fieldName":"Dock Number",
+			   "defaultText":"00",
+			   "maxLength":2,
+			   "color":"#000000"
+			}
+		 ],   
+		"lightObjects":[
+		   {
+			  "objectName":"&greenlight",
+			  "emissive":true,
+			  "color":"00BF0C",
+			  "brightnessAnimations":[
+				 {
+					"animationType":"translation",
+					"variable":"green",
+					"axis":[
+					   0.0,
+					   1.0,
+					   0.0
+					],
+					"duration":1
+				 }
+			  ]
+		   },
+		   {
+			"objectName":"&redlight",
+			"emissive":true,
+			"color":"BF0000",
+			"brightnessAnimations":[
+			   {
+				  "animationType":"translation",
+				  "variable":"red",
+				  "axis":[
+					 0.0,
+					 1.0,
+					 0.0
+				  ],
+				  "duration":1
+			   }
+			]
+		 }
+		],
+		"modelType":"obj",
+		"initialVariables":[
+		   "red"
+		],
+		"customVariables":[
+			"red",
+			"green"
+		 ]
+	 },
+	 "collisionGroups":[
+		{
+		   "collisions": [
+			 {
+			   "pos": [-1.49375,0.9375,0.421875],
+			   "width": 0.0625,
+			   "height": 0.0625,
+			   "variableName": "green",
+			   "variableType": "toggle"
+			 }
+		   ]
+		 },
+		 {
+		   "isInterior": true,
+		   "collisions": [
+			  {
+				 "pos": [-1.49375,0.9375,0.34375],
+				 "width": 0.0625,
+				 "height": 0.0625,
+				 "variableName": "red",
+				 "variableType": "toggle"
+			   }
+		   ]
+		 }     
+	 ]  
+}

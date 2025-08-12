@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Ssangyong Rodius (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "ssangyong_rodius"
+	}
+}

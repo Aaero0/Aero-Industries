@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mercedes Benz Sprinter NCV3 LWB (Cretacea NRATP ASU)",
+			"subName" : "_ior",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mercedes_sprinter_ncv3lwb"
+	}
+}

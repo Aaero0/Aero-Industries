@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Nissan Silvia S13 Q's (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Nissan Silvia S13 Q's (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "nissan_silvia_s13q"
+	}
+}

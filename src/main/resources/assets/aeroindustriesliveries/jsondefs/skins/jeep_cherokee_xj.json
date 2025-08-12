@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Jeep Cherokee XJ (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Jeep Cherokee XJ (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "jeep_cherokee_xj"
+	}
+}

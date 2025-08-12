@@ -1,0 +1,35 @@
+{
+  "generic": {
+    "type": "generic_mudflaps",
+    "forwardsDamageMultiplier": 0.0,
+    "width": 0.25,
+    "height": 0.25
+  },
+  "connectionGroups": [
+  ],
+  "definitions": [
+    {
+      "subName": "",
+      "textureName": "general_frame",
+      "name": "Truck mudflaps - Standard",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "description": "Standard issue mudflaps",
+    "materialLists": [
+      [
+        "oredict:ingotIron:1"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

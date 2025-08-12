@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Datsun 100A (Finser State Police - GEN 1)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Datsun 100A (Finser State Police - GEN 2)",
+			"subName" : "_fspd1",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "datsun_100ac"
+	}
+}

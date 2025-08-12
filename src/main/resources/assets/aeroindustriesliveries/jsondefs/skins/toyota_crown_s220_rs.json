@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Toyota Crown S220 RS (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Toyota Crown S220 RS (Finser State Police - GEN 3)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "toyota_crown_s220_rs"
+	}
+}

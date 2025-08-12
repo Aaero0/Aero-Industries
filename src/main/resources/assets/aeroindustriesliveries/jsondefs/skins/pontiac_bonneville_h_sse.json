@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Pontiac Bonneville SSE (H body) (FTA Yellowcar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "pontiac_bonneville_h_sse"
+	}
+}

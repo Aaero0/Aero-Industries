@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Boeing CH-47 Chinook (Finser Air Defense Force)",
+			"subName" : "_fadf",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Boeing CH-47 Chinook (Decom Finser Air Defense Force)",
+			"subName" : "_decom1",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "helicopterpack",
+    "systemName": "ch47"
+	}
+}

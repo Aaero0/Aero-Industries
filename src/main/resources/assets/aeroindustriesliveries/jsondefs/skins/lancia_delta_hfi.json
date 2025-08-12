@@ -1,0 +1,14 @@
+{
+	"definitions" : [
+		{
+			"name" : "Lancia Delta HF Integrale (FTA YellowCar)",
+			"subName" : "_ftataxi",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "lancia_delta_hfi"
+	}
+}

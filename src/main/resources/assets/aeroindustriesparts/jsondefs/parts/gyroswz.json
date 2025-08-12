@@ -1,0 +1,70 @@
+{
+  "generic": {
+    "type": "generic_gyrowz",
+    "width": 0.01,
+    "height": 0.01
+  },
+  "definitions": [
+    {
+      "subName": "_standard",
+      "name": "gyronamewz4000",
+      "extraMaterialLists": [
+        []
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [
+      {
+        "objectName": "&gyrol",
+        "emissive": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "EMERLTS",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "0_5_5_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "&gyror",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "EMERLTS",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "5_5_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "customVariables": ["EMERLTS"],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "materialLists": [
+      ["minecraft:grass:0:1"]
+    ],
+    "stackSize": 1
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "motorized": {
+    "hasAutopilot": true,
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 1637,
+    "fuelCapacity": 15000,
+    "axleRatio": 3.55,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "running_light",
+    "panel": "mts:default_car",
+    "isBigTruck": true
+  },
+  "parts": [
+    {
+      "pos": [1.17381,0.545466,0.0],
+      "minValue": 1.5,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_wt",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.17381,0.545466,0.0],
+      "rot": [0.0,180.0,0.0],
+      "isMirrored": true,
+      "minValue": 1.5,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_wt",
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.17381,0.545466,3.75],
+      "turnsWithSteer": true,
+      "minValue": 1.5,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_wt",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [1.17381,0.545466,3.75],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.17381,0.545466,3.75],
+      "rot": [0.0,180.0,0.0],
+      "turnsWithSteer": true,
+      "isMirrored": true,
+      "minValue": 1.5,
+      "maxValue": 2.5,
+      "toneIndex": 1,
+	  "defaultPart": "aiavparts:wheel_wt",
+      "types": [
+        "ground_wheel"
+      ],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [-1.17381,0.545466,3.75],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [0.68744,1.59137,1.25974],
+      "isController": true,
+	  "isPermanent": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.0,1.59137,1.31566],
+	  "isPermanent": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [-0.714684,1.59137,1.94303],
+      "rot": [0.0,180.0,0.0],
+      "isController": true,
+	  "isPermanent": true,
+	  "defaultPart": "unuparts:unuparts_part_unu_seat_invisible",
+      "types": [
+        "seat_invisible"
+      ]
+    },
+    {
+      "pos": [0.0,2.68841,0.93517],
+	  "defaultPart": "unuparts:unuparts_part_unu_gyrophare_orange",
+      "types": [
+        "generic_gyrophare"
+      ]
+    },
+    {
+      "pos": [0.0,0.516092,-1.53048],
+      "maxValue": 4.25,
+	  "defaultPart": "unuparts:unuparts_part_unu_engine_i06h",
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": [1,2,3,4,8]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "isInterior": true,
+      "collisions": [
+        {
+          "pos": [0.72,0.6,-0.7],
+          "variableName": "door_tailgate",
+          "variableType": "toggle"
+        }
+      ],
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "door_tailgate",
+          "axis": [0.0,-0.6,-0.5]
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.4,-0.25],
+          "width": 1.05,
+          "height": 0.4
+        },
+        {
+          "pos": [0.0,0.258594,5.87043],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        },
+        {
+          "pos": [0.0,0.258594,-3.30793],
+          "width": 0.25,
+          "height": 0.25,
+          "variableName": "connection_requested",
+          "variableType": "set",
+          "variableValue": 2.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "isHookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper",
+          "pos": [0.0,0.02601,3.56009],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_wheel",
+          "pos": [0.0,-0.5,2.764965],
+          "distance": 2.0
+        }
+      ]
+    },
+    {
+      "groupName": "TRAILER",
+      "isHitch": true,
+      "connections": [
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.258594,5.87043],
+          "distance": 2.0
+        },
+        {
+          "type": "trailer_ring",
+          "pos": [0.0,0.258594,-3.30793],
+          "distance": 2.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.90745,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 120,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.7512,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.59495,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.4387,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 45,
+      "hudScale": 0.325
+    },
+    {
+      "pos": [0.28245,0.829139,1.805],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 280,
+      "hudY": 45,
+      "hudScale": 0.325
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_white",
+      "name": "Komatsu WT500e(white)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_ana",
+      "name": "Komatsu WT500e(ANA)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeBlue:1,oredict:dyeCyan:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_anafullbody",
+      "name": "Komatsu WT500e(ANA, Full Body)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeBlue:3,oredict:dyeCyan:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_jal",
+      "name": "Komatsu WT500e(JAL)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeGray:2,oredict:dyeRed:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_jal2",
+      "name": "Komatsu WT500e(JAL 2)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeRed:1"
+        ]
+      ]
+    },
+    {
+      "subName": "_jalfullbody",
+      "name": "Komatsu WT500e(JAL, Fullbody)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeRed:2,oredict:dyePurple:2,oredict:dyeYellow:2,oredict:dyePink:2"
+        ]
+      ]
+    },
+    {
+      "subName": "_whiteplastic",
+      "name": "Komatsu WT500e(Plastic Parts)",
+	  "partTones": [
+        ""
+      ],
+      "extraMaterialLists": [
+        [
+          "oredict:dyeWhite:3,oredict:dyeDarkGray:1"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "steeringwhegfsgsgl",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.588149,0.593752,1.82917],
+            "axis": [1.0,21.0,-12.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&reverselight",
+        "emissive": true,
+        "color": "FFFFFF",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "engine_reversed_1",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&headlights",
+        "emissive": true,
+        "color": "FFFFE7",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "headlight",
+            "axis": [0.0,1.5,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&brakelights",
+        "emissive": true,
+        "color": "B90000",
+        "brightnessAnimations": [
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,0.0,0.0],
+            "duration": 1
+          },
+          {
+            "animationType": "translation",
+            "variable": "brake",
+            "axis": [0.0,1.0,0.0],
+            "duration": 1
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalleft",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      },
+      {
+        "objectName": "&turnsignalright",
+        "emissive": true,
+        "color": "FAB000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "translation",
+            "variable": "10_10_0_cycle",
+            "axis": [0.0,1.0,0.0],
+            "duration": 2
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "mtsofficialpack:horn_car",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true,
+        "minDistance": 0.0,
+        "minDistanceVolume": 0.0,
+        "middleDistance": 0.0,
+        "middleDistanceVolume": 0.0,
+        "maxDistance": 0.0,
+        "maxDistanceVolume": 0.0
+      }
+    ],
+    "particles": [
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 1,
+        "transparency": 0.25,
+        "toTransparency": 0.25,
+        "scale": 0.2,
+        "hitboxSize": 0.2,
+        "color": "D9D9D9",
+        "toColor": "D9D9D9",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_piston_1_1_cam_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "type": "smoke",
+        "spawningOrientation": "entity",
+        "renderingOrientation": "player",
+        "quantity": 5,
+        "scale": 0.5,
+        "hitboxSize": 0.2,
+        "color": "000000",
+        "pos": [1.1262,0.09754,-0.74476],
+        "initialVelocity": [1.0,0.0,0.0],
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_backfired_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "modelType": "obj",
+    "initialVariables": [
+      "door_tailgate"
+    ]
+  },
+  "general": {
+    "description": "Japanese pushback tug of some sort. \nRecommended parts: \n-Komatsu WT500E Wheel \n-UNU diesel I6 \n-UNU Orange Gyrophare \n-UNU Invisiseats/I cant believe its not invisiseat! (IVV Invisiseat)",
+    "health": 100,
+    "materialLists": [
+      [
+        "oredict:ingotIron:18"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

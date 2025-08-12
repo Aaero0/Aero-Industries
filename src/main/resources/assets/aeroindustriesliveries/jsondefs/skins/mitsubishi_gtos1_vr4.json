@@ -1,0 +1,20 @@
+{
+	"definitions" : [
+		{
+			"name" : "Mitsubishi GTO1 VR4 (Finser State Police - GEN 2)",
+			"subName" : "_fspd",
+			"description" : "",
+			"extraMaterials" : []
+		},
+		{
+			"name" : "Mitsubishi GTO1 VR4 (Finser State Police - GEN 3)",
+			"subName" : "_fspdnew",
+			"description" : "",
+			"extraMaterials" : []
+		}
+	],
+	"general": {
+    "packID": "gvp",
+    "systemName": "mitsubishi_gtos1_vr4"
+	}
+}
